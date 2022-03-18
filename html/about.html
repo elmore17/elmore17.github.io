@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/light-mode.css" title="theme" />
+    <link rel="stylesheet" href="../css/dark-mode.css" title="theme" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>KUХНЯ</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-bowl-rice'></i>
+                <div class="logo_name">KUХНЯ</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li class="active">
+                <a href="../html/about.html">
+                    <i class='bx bxs-notepad'></i>
+                    <span class="links_name">О нас</span>
+                </a>
+                <span class="tooltip">О нас</span>
+            </li>
+            <li>
+                <a href="../html/add recpis.html">
+                    <i class='bx bxs-plus-circle'></i>
+                    <span class="links_name">Добавить рецепт</span>
+                </a>
+                <span class="tooltip">Добавить рецепт</span>
+            </li>
+            <li>
+                <a href="../html/index.html">
+                    <i class='bx bx-lemon'></i>
+                    <span class="links_name">Рецепты</span>
+                </a>
+                <span class="tooltip">Рецепты</span>
+            </li>
+            <li>
+                <a href="../html/favorite.html">
+                    <i class='bx bxs-bookmark-alt-plus'></i>
+                    <span class="links_name">Избранное</span>
+                </a>
+                <span class="tooltip">Избранное</span>
+            </li>
+            <li>
+                <a href="../html/map.html">
+                    <i class='bx bx-map-alt'></i>
+                    <span class="links_name">Карта</span>
+                </a>
+                <span class="tooltip">Карта</span>
+            </li>
+            <li>
+                <a href="../html/accountreg.html">
+                    <i class='bx bxs-user-rectangle'></i>
+                    <span class="links_name">Аккаунт</span>
+                </a>
+                <span class="tooltip">Аккаунт</span>
+            </li>
+        </ul>
+    </div>
+    <header class="about">
+        <div class="about_it">
+            <h2 class="typo--title">НАША ТИМА</h2>
+        </div>
+    </header>
+    <section class="home_content1">
+        <div class="text">
+            <article class="card">
+                <img src="../img/Danya.jpg" alt="Егоркин" class="card_img">
+                <h2 class="card_name">Егоркин Данила Михайлович</h2>
+                <h1 class="card_btn1">frontend разработчик</h1>
+            </article>
+        </div>
+        <div class="text">
+            <article class="card">
+                <img src="../img/Max.jpg" alt="Одиноков" class="card_img">
+                <h2 class="card_name">Одиноков Максим Александрович</h2>
+                <h1 class="card_btn1">backend разработчик</h1>
+            </article>
+        </div>
+        <div class="text">
+            <article class="card">
+                <img src="../img/Jora.jpg" alt="Самонин" class="card_img">
+                <h2 class="card_name">Самонин Геогрий Максимович</h2>
+                <h1 class="card_btn1">Team leader</h1>
+            </article>
+        </div>
+    </section>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

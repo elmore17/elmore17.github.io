@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>KUХНЯ</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-bowl-rice'></i>
+                <div class="logo_name">KUХНЯ</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="../html/about.html">
+                    <i class='bx bxs-notepad'></i>
+                    <span class="links_name">О нас</span>
+                </a>
+                <span class="tooltip">О нас</span>
+            </li>
+            <li>
+                <a href="../html/add recpis.html">
+                    <i class='bx bxs-plus-circle'></i>
+                    <span class="links_name">Добавить рецепт</span>
+                </a>
+                <span class="tooltip">Добавить рецепт</span>
+            </li>
+            <li>
+                <a href="../html/index.html">
+                    <i class='bx bx-lemon'></i>
+                    <span class="links_name">Рецепты</span>
+                </a>
+                <span class="tooltip">Рецепты</span>
+            </li>
+            <li>
+                <a href="../html/favorite.html">
+                    <i class='bx bxs-bookmark-alt-plus'></i>
+                    <span class="links_name">Избранное</span>
+                </a>
+                <span class="tooltip">Избранное</span>
+            </li>
+            <li class="active">
+                <a href="../html/map.html">
+                    <i class='bx bx-map-alt'></i>
+                    <span class="links_name">Карта</span>
+                </a>
+                <span class="tooltip">Карта</span>
+            </li>
+            <li>
+                <a href="../html/accountreg.html">
+                    <i class='bx bxs-user-rectangle'></i>
+                    <span class="links_name">Аккаунт</span>
+                </a>
+                <span class="tooltip">Аккаунт</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="../img/ZRYVZdBwphM.jpg" alt="">
+                    <div class="name_job">
+                        <div class="name">Петрова Яна</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d36972.73691710338!2d37.62213140086177!3d55.758289560379076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0KDQtdGB0YLQvtGA0LDQvdGL!5e0!3m2!1sru!2sru!4v1646077005747!5m2!1sru!2sru"
+        width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
